@@ -11062,6 +11062,18 @@ hr.light {
   }
 }
 
+#transbank {
+  padding-top: 10rem;
+  color: white;
+  font-size: 52px;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to right, #f5af19, #f12711 100%), url("../assets/img/WebPay1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
