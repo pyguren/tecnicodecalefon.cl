@@ -46,13 +46,37 @@
             window.dataLayer || [];
 
         function
-        gtag() {
+            gtag() {
             dataLayer.push(arguments);
         }
         gtag('js',
             new Date());
         gtag('config',
             'UA-156507927-6');
+    </script>
+
+    <script src="https://apis.google.com/js/platform.js?onload=renderOptIn" async diferir> </script>
+
+    <script>
+        window.renderOptIn = function () {
+            window.gapi.load('surveyyoptin', function () {
+                window.gapi.surveyoptin.render({
+                    // CAMPOS REQUERIDOS
+                    "comerciante_id": 261857595,
+                    "order_id": " ORDER_ID ",
+                    "correo electrónico": " CUSTOMER_EMAIL ",
+                    "delivery_country": " COUNTRY_CODE ",
+                    "fecha_estimada_envío": " AAAA-MM-DD ",
+
+                    // CAMPOS OPCIONALES
+                    "productos": [{
+                        "gtin": " GTIN1 "
+                    }, {
+                        "gtin": " GTIN2 "
+                    }]
+                });
+            });
+        }
     </script>
 
     <!-- ///////////////////////////////////////////////////////////////////////////////////
@@ -112,23 +136,33 @@
                     <p class="text-white-75 font-weight-light mb-5">Nuestros servicios centran la instalación y
                         reparación de un calefon como una labor de tipo
                         esencial,
-                        de mucha técnica y conocimiento sobre la normativa vigente del Sec. Cualquiera puede instalar un
-                        calefon,
-                        pero pocos tienen conocimiento de como no debe hacerse y porque.
+                        de mucha técnica, responsabilidad y conocimiento sobre la normativa vigente del Sec. Cualquier
+                        persona podría instalar un
+                        calefon viendo tutoriales,
+                        pero solo los técnicos autorizados por la SEC tenemos el conocimiento del peligro que este
+                        representa y como evitar riesgos.
                         Muchos de los accidentes relacionados con el gas se deben justo a esto, a la irresponsabilidad
                         de
                         los
                         clientes o bien a la poca proligidad de algunos gasfiter.
+                        Dejamos claro que nosotros no pertenecemos a la empresa Junkers y tampoco mantenemos vinculo
+                        alguno con la marca más que una pasión por trabajar con artefactos de alta tecnología alemana.
+                        Somos un Servicio técnico autorizado por la Superintendencia de electricidad y combustibles
+                        especializados en la marca Junkers.
                     </p>
 
                     <a class="btn btn-primary btn-xl js-scroll-trigger"
                         href="https://api.whatsapp.com/send?phone=56987248927&text=hola%20necesito%20un%20gasfiter%20sec">Contáctanos
                         por whatsapp</a>
+                    <br>
                 </div>
+
             </div>
         </div>
-    </header>
 
+    </header>
+    <br>
+    <br>
     <!-- Acerca de nosotros-->
     <section class="page-section" id="services">
         <div class="container">
@@ -139,8 +173,8 @@
                     <div class="mt-5">
                         <i class="fas fa-4x fa-gem text-primary mb-4"></i>
                         <h3 class="h4 mb-2">Somos técnicos Autorizados</h3>
-                        <p class="text-muted mb-0">Somos técnicos autorizados por la SEC en manejo de redes e
-                            instalaciones de gas</p>
+                        <p class="text-muted mb-0">Somos técnicos autorizados por la SEC en instalaciones de redes y
+                            artefactos a gas.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -154,7 +188,7 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-4x fa-globe text-primary mb-4"></i>
-                        <h3 class="h4 mb-2">Somos responsables</h3>
+                        <h3 class="h4 mb-2">Somos responsables (Revisa los comentarios de nuestros clientes)</h3>
                         <p class="text-muted mb-0">Cumplimos nuestros compromisos, respetamos las horas acordadas y le
                             explicamos claramente a nuestros clientes el estado de sus artefactos e instalaciones.</p>
                     </div>
@@ -162,7 +196,7 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-4x fa-heart text-primary mb-4"></i>
-                        <h3 class="h4 mb-2">Nos respaldan años de servicios</h3>
+                        <h3 class="h4 mb-2">Nos respaldan más de 10 años de servicio</h3>
                         <p class="text-muted mb-0">Consulte en la sección de testimonios y podrá verificar los
                             comentarios de nuestros clientes.</p>
                     </div>
@@ -191,150 +225,698 @@
     <section class="page-section bg-primary" id="servicios">
         <div class="container">
             <table class="table table-hover table-dark">
-                <h2>Valores estimativos de nuestros servicios</h2>
+                <h2><strong> Valores estimativos de nuestros servicios (Válido en Santiago)</strong></h2>
                 <thead>
-                    <tr>
+                    <tr style="background-color: darkgray;">
                         <th scope="col">Detalle del trabajo</th>
-                        <th scope="col">Valores netos</th>
+                        <th scope="col">Valores IVA incluido</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">Mantención preventiva de calefon</th>
-                        <td>desde $ 48.000</td>
+                        <th scope="row">Mantención preventiva de calefon (el calefon debe estar encendiendo)</th>
+                        <td>Desde $ 48.000</td>
                     </tr>
                     <tr>
-                        <th scope="row">Instalación de calefon</th>
-                        <td>desde $ 65.000</td>
+                        <th scope="row">Instalación de calefon (retirar el antiguo e instalar nuevo de similares
+                            caracteristicas)</th>
+                        <td>Desde $ 78.000</td>
                     </tr>
                     <tr>
                         <th scope="row">Reparación menor de calefon (no incluye cambio de repuesto)</th>
-                        <td>$ 40.000</td>
+                        <td>Desde $ 40.000</td>
                     </tr>
                     <tr>
                         <th scope="row">Reparación con cambio de repuesto (no incluye valor del repuesto)</th>
-                        <td>desde $ 55.000</td>
+                        <td>Desde $ 55.000</td>
                     </tr>
                     <tr>
                         <th scope="row">Programación de parámetros de calefon WTD</th>
                         <td>$ 45.000</td>
                     </tr>
                     <tr>
-                        <th scope="row">Certificación de calefon</th>
+                        <th scope="row">Certificación de calefon (emisión de informe técnico que avala funcionamiento e
+                            instalación)</th>
                         <td>$ 40.000</td>
                     </tr>
                     <tr>
-                        <th scope="row">Visita técnica para diagnóstico</th>
-                        <td>$ 25.000</td>
+                        <th scope="row">Visita técnica para diagnóstico (No considera reparación alguna, solo
+                            diagnóstico y presupuesto)</th>
+                        <td>Desde $ 25.000</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Los valores solo son referenciales y dependerá en cada caso previa a una evaluación</p>
+            <p>Los valores solo son referenciales y dependerá en cada caso previa a una evaluación. El valor de la
+                visita de diagnóstico esta planteada para las comunas de Las condes, Vitacura, Providencia, Lo
+                barnechea, Ñuñoa, La reina, Huechuraba</p>
 
         </div>
     </section>
-    <!-- Catálogo de productos-->
-    <div class="page-section bg-dark text-white" id="portfolio">
-        <div class="col-lg-10 text-center">
-            <h2 class="text-white mt-0">Venta online de calefones Junkers</h2>
-        </div>
+    <section class="page-section">
+        <h1 style="text-align: center;"><u><strong><i>Catálogo de productos Junkers (solo venta online)</i></strong></u>
+        </h1>
+        <br>
+        <br>
         <div class="container-fluid p-0">
             <div class="row no-gutters">
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="" />
-                        <div class="portfolio-box-caption">
-                            <h5>Calefon tiro forzado Hydrowind easy 12 lts</h5>
-                            <!-- <div class="project-category text-white-50">Categoria</div> -->
-                            <div class="project-name">Tiro Forzado</div>
-                            <div class="project-name">Disponible en GN y GLP</div>
-                            <div class="project-name">Valor: $ 320.000 CLP por unidad </div>
-                            <div class="project-name">No incluye despacho </div>
-                        </div>
-                    </a>
-                    <br>
-                    <!-- <div>
-                        <button type="button" class="btn btn-warning">
-                            <a href="https://www.junkers.cl/files/Manual_HydroWind_Easy_10_12lts_Junkers_2020_CLJ.pdf">Ficha
-                                técnica
-                            </a></button>
-                    </div> -->
-
-                </div>
-
-                <div class="col-lg-4 col-sm-6">
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg">
                         <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="" />
-                        <div class="portfolio-box-caption">
-                            <h5>Calefon tiro natural Smart-C 13 lts</h5>
-                            <!-- <div class="project-category text-white-50">Categoria</div> -->
-                            <div class="project-name">Tiro Natural</div>
-                            <div class="project-name">Disponible en GN y GLP</div>
-                            <div class="project-name">Valor: $ 288.000 CLP por unidad </div>
-                            <div class="project-name">No incluye despacho </div>
-                        </div>
                     </a>
-                    <br>
-                    <!-- <div><button type="button" class="btn btn-warning"
-                            href="https://www.junkers.cl/files/Manual_Ionizado_Hydrobattery_Smart-C_10_13lts_Junkers_2020_CLJ.pdf">Ficha
-                            técnica</button>
-                    </div> -->
+                    <div class="portfolio-box" style="background-color: orange;margin: 5%;width: 90%;">
+                        <h5>Calefon tiro natural Hydrobattery Smart-C </h5>
+                        <ul>
+                            <li>10 y 13 Litros</li>
+                            <li>Tiro Natural / Ionizado</li>
+                            <li>Disponible en Gas natural y GLP</li>
+                            <li> Encendido automático con pilas</li>
+                            <li>3 años de garantía</li>
+                        </ul>
+                        <h6>Tres sistemas de seguridad:</h6>
+                        <ul>
+                            <li>Llama por ionización</li>
+                            <li>Sonda antigases</li>
+                            <li>Limitador de temperatura</li>
+                        </ul>
+                        <div class="project-name">No incluye despacho </div>
+
+
+                        <h5>Valor: $ 205.000 CLP 10 litros </h5>
+                        <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=s1xkbss' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div>
+                        <br>
+                        <h5>Valor: $ 229.000 CLP 13 litros</h5>
+                        <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=snosy3j' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div>
+                        <br>
+                    </div>
 
                 </div>
+
+
+
+
                 <div class="col-lg-4 col-sm-6">
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg">
                         <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="" />
-                        <div class="portfolio-box-caption">
-                            <h5>Calefon tiro forzado WTD 15 lts</h5>
-                            <!-- <div class="project-category text-white-50">Categoria</div> -->
-                            <div class="project-name">Tiro Forzado</div>
-                            <div class="project-name">Disponible en GN y GLP</div>
-                            <div class="project-name">Valor: $ 388.000 CLP por unidad </div>
-                            <div class="project-name">No incluye despacho </div>
-                        </div>
                     </a>
-                    <br>
-                    <!-- <div><button type="button" class="btn btn-warning"
-                            href="https://www.junkers.cl/junkers-products/gas-water-heaters/tiroforzadoestanca/hydrocompact.html">Ficha
-                            técnica</button>
-                    </div> -->
+                    <div class="portfolio-box" style="background-color: orange;margin: 5%;width: 90%;">
+                        <h5>Calefon tiro natural WTD Hydropower Plus </h5>
+                        <ul>
+                            <li>11,14 y 16 Litros</li>
+                            <li>Tiro Natural / Ionizado</li>
+                            <li>Disponible en Gas natural y GLP</li>
+                            <li> Encendido automático sin pilas</li>
+                            <li>3 años de garantía</li>
+                            <li>Control digital de la temperatura.</li>
+                            <li>Serpentín 100% cobre Lámina anticalcáreas</li>
+                            <li>Evita la acumulación
+                                del sarro por el paso del agua.</li>
+                        </ul>
+                        <div class="project-name">No incluye despacho </div>
+
+                        <h5>Valor: $ 320.000 CLP 11 litros </h5>
+                        <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=gzgpehh' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div>
+                        <h5>Valor: $ 352.000 CLP 14 litros</h5>
+                        <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=62tyxnb' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div>
+                        <h5>Valor: $ 375.000 CLP 16 litros</h5>
+                        <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=ubbeolt' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div>
+                        <br>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-box" style="background-color: orange;margin: 5%;width: 90%; height:53% ;">
+                        <h5>Calefon tiro natural Hydropower</h5>
+                        <ul>
+                            <li>Solo disponible en 16 Litros</li>
+                            <li>Tiro Natural / Ionizado</li>
+                            <li>Disponible en Gas natural y GLP</li>
+                            <li> Encendido automático SIN pilas</li>
+                            <li>3 años de garantía</li>
+                            <li>Serpentín 100% cobre Lámina anticalcáreas</li>
+                            <li>Evita la acumulación
+                                del sarro por el paso del agua.</li>
+                        </ul>
+
+                        <div class="project-name">No incluye despacho </div>
+                        <h5>Valor: $ 348.000 CLP 10</h5>
+                        <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=kefydxb' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div>
+                        <br>
+                        <br>
+
+                    </div>
 
                 </div>
             </div>
         </div>
-    </div>
+
+
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/7.jpg">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/7.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-box" style="background-color: orange;margin: 5%;width: 90%; height: 60%;">
+                        <h5>Calefon tiro natural WR (Minimaxx)</h5>
+                        <ul>
+                            <li>11,14 y 16 Litros</li>
+                            <li>Tiro Natural / Ionizado</li>
+                            <li>Disponible en Gas natural y GLP</li>
+                            <li> Encendido automático con pilas</li>
+                            <li>3 años de garantía</li>
+                            <li>Serpentín 100% cobre Lámina anticalcáreas</li>
+                            <li>Evita la acumulación
+                                del sarro por el paso del agua.</li>
+                        </ul>
+
+                        <div class="project-name">No incluye despacho </div>
+                        <h5>Valor: $ 253.000 CLP 11 litros </h5>
+                        <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=gyvdhvb' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-celeste.png'>
+                            </a>
+                        </div>
+                        <h5>Valor: $ 273.000 CLP 14 litros</h5>
+                        <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=ejkat1g' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div>
+                        <h5>Valor: $ 310.000 CLP 16 litros</h5>
+                        <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=ah2besy' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-box" style="background-color: orange;margin: 5%;width: 90%; height: 60%;">
+                        <h5>Calefon tiro forzado HydroWind Easy </h5>
+                        <ul>
+                            <li>12 Litros</li>
+                            <li>Tiro forzado càmara abierta / Ionizado</li>
+                            <li>Disponible en Gas natural</li>
+                            <li> Encendido automático enchufado 220V</li>
+                            <li>3 años de garantía</li>
+                            <li>Control digital de la temperatura</li>
+                            <li>Moderno Display con indicador de To seleccionada</li>
+                            <li>Serpentín 100% cobre Lámina anticalcáreas</li>
+                            <li>Evita la acumulación
+                                del sarro por el paso del agua.</li>
+                            <liu>Modelo de 12 l/min con opción invierno/verano
+                                para ahorrar gas.</liu>
+                            <li>Ideal para instalar en la logia del departamento
+                                o terraza.</li>
+                        </ul>
+                        <div class="project-name">No incluye despacho </div>
+                        <h5>Valor: $ 320.000 CLP 12 litros </h5>
+                        <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=b9cnfyx' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div>
+                        <br>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/8.jpg">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/8.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-box" style="background-color: orange;margin: 5%;width: 90%;">
+                        <h5>Calefon tiro forzado Hydrowind Confort</h5>
+                        <ul>
+                            <li>8, 11, 14 y 16 Litros</li>
+                            <li>Tiro forzado de càmara abierta / Ionizado</li>
+                            <li>Disponible en Gas natural y GLP</li>
+                            <li> Encendido automático enchufa 220V</li>
+                            <li>3 años de garantía</li>
+                            <li>Serpentín 100% cobre Lámina anticalcáreas</li>
+                            <li>Evita la acumulación
+                                del sarro por el paso del agua.</li>
+                            <li>Pantalla indicadora de temperatura y averías</li>
+                            <li>6 sistemas de seguridad:Limitador de temperatura,
+                                Válvula de seguridad, Función de autodiagnóstico
+                                Sensor de detección de llama, Monitoreo de
+                                evacuación de gases, Protección contra quemaduras</li>
+                        </ul>
+
+                        <div class="project-name">No incluye despacho </div>
+                        <h5>Valor: $ 250.000 CLP 8 litros</h5>
+                        <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=wtky4hv' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div>
+                        <h5>Valor: $ 270.000 CLP 11 litros</h5>
+                        <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=2fuszmz' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div>
+                        <h5>Valor: $ 310.000 CLP 14 litros</h5>
+                        <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=s5xkva1' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div>
+                        <h5>Valor: $ 332.000 CLP 16 litros</h5>
+                        <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=6brr44z' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/14.jpg">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/14.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-box" style="background-color: orange;margin: 5%;width: 90%;">
+                        <h5>Kit ducto 60 mm </h5>
+                        <ul>
+                            <li>Apto para Hydrowind 8,10,11 y 12 litros</li>
+                        </ul>
+
+                        <div class="project-name">No incluye despacho </div>
+
+
+                        <h5>Valor: $ 25.000 CLP</h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=s1xkbss' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                        <br>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/13.jpg">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/13.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-box" style="background-color: orange;margin: 5%;width: 90%;">
+                        <h5>Kit de ducto cámara estanca </h5>
+                        <ul>
+                            <li>Apto solo para calefones tiro forzado cámara estanca</li>
+
+                        </ul>
+                        <div class="project-name">No incluye despacho </div>
+
+                        <h5>Valor: $ 59.000 CLP </h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=gzgpehh' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                        <br>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/12.jpg">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/12.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-box" style="background-color: orange;margin: 5%;width: 90%;">
+                        <h5>Kit de ducto 80 mm AZ-219</h5>
+                        <ul>
+                            <li>Hydrowind 14,15,16,18 y 21 lts/WR-2KM/WRD-2KM </li>
+                        </ul>
+
+                        <div class="project-name">No incluye despacho </div>
+                        <h5>Valor: $ 40.000 CLP</h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=kefydxb' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/15.jpg">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/15.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-box" style="background-color: orange;margin: 5%;width: 90%; height: 55%;">
+                        <h5>Calefon tiro forzado WRD 16-2KM</h5>
+                        <ul>
+                            <li>Solo disponible en 16 lts</li>
+                            <li>Pantalla indicadora de fallas y averías</li>
+                            <li>Encendido Automático (conexión eléctrica)</li>
+                            <li>Disponible en Gas natural y GLP</li>
+                            <li>Tiro forzado / cámara abierta</li>
+                            <li>3 años de garantía</li>
+                            <li>Serpentín 100% cobre Lámina anticalcáreas</li>
+                            <li>Evita la acumulación
+                                del sarro por el paso del agua.</li>
+                        </ul>
+
+                        <div class="project-name">No incluye despacho </div>
+                        <h5>Valor: NO SE ENCUENTRA STOCK </h5>
+                        <!-- <div style="text-align: center;">
+                        <a href='https://www.flow.cl/btn.php?token=gyvdhvb' target='_blank'>
+                            <img src='https://www.flow.cl/img/botones/btn-pagar-celeste.png'>
+                        </a>
+                    </div> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/16.jpg">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/16.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-box" style="background-color: orange;margin: 5%;width: 90%; height: 55%;">
+                        <h5>Calefon Tiro Forzado WR-2KM </h5>
+                        <ul>
+                            <li>Disponible en 10 y 13 Litros</li>
+                            <li>Tiro forzado cámara abierta / Ionizado</li>
+                            <li>Disponible en Gas natural y GLP</li>
+                            <li> Encendido automático enchufado 220V</li>
+                            <li>3 años de garantía</li>
+                            <li>Serpentín 100% cobre Lámina anticalcáreas</li>
+                            <li>Evita la acumulación
+                                del sarro por el paso del agua.</li>
+                        </ul>
+                        <div class="project-name">No incluye despacho </div>
+                        <h5>Valor: $ 307.000 CLP 10 litros </h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=b9cnfyx' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                        <h5>Valor: $ 332.000 CLP 13 litros </h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=b9cnfyx' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/18.jpg">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/18.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-box" style="background-color: orange;margin: 5%;width: 90%; height: 55%">
+                        <h5>Calefon tiro forzado WTD-KME</h5>
+                        <ul>
+                            <li>10, 12, 15 , 18 y 21 Litros</li>
+                            <li>Tiro forzado de càmara abierta / Ionizado</li>
+                            <li>Disponible en Gas natural y GLP</li>
+                            <li> Encendido automático enchufa 220V</li>
+                            <li>3 años de garantía</li>
+                            <li>Serpentín 100% cobre Lámina anticalcáreas</li>
+                            <li>Evita la acumulación
+                                del sarro por el paso del agua.</li>
+                            <li>Pantalla indicadora de temperatura y averías</li>
+                            <li>6 sistemas de seguridad:Limitador de temperatura,
+                                Válvula de seguridad, Función de autodiagnóstico
+                                Sensor de detección de llama, Monitoreo de
+                                evacuación de gases, Protección contra quemaduras</li>
+                        </ul>
+
+                        <div class="project-name">No incluye despacho </div>
+                        <h5>Valor: $ 250.000 CLP 10 litros</h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=wtky4hv' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                        <h5>Valor: $ 270.000 CLP 12 litros</h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=2fuszmz' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                        <h5>Valor: $ 310.000 CLP 15 litros</h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=s5xkva1' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                        <h5>Valor: $ 332.000 CLP 18 litros</h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=6brr44z' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                        <h5>Valor: $ 332.000 CLP 21 litros</h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=6brr44z' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/19.jpg">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/19.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-box" style="background-color: orange;margin: 5%;width: 90%; height: 62%;">
+                        <h5>Caldera ZW 24-2 LV KE ( 24 KW ) ceraclass TN</h5>
+                        <p>
+                            Tiro Forzado y Cámara Estanca.
+                            Alto rendimiento y máxima eficiencia.
+                            Funcionamiento Silencioso.
+                            Fácil de usar, instalar y reparar.
+                            Modulación electrónica de llama en calefacción como en ACS.
+                            Sistema ""Quick Tap"" de pre-calentamiento y confort de ACS.
+                            Regulación de potencia independiente para Calefacción y ACS.
+                            Led indicador de códigos de error.
+                            Serpentín de 100% Cobre.
+                            Intercambiador de calor de placas fabricadas en acero inoxidable.
+                            Bomba de recirculación.
+                            Vaso de Expansión.
+                            Purgador Automático.
+                            Para Gas licuado y Gas natural.
+                            Fabricación Europea.
+                        </p>
+
+                        <div class="project-name">No incluye despacho </div>
+                        <h5>Valor: $ 605.000 14 lts</h5>
+                        <h5>Consultar disponibilidad</h5>
+                        <br>
+                        <!-- <div style="text-align: center;">
+                        <a href='https://www.flow.cl/btn.php?token=gyvdhvb' target='_blank'>
+                            <img src='https://www.flow.cl/img/botones/btn-pagar-celeste.png'>
+                        </a>
+                    </div> -->
+                        <h5>Valor: $ 630.000 17 lts</h5>
+                        <h5>Consultar disponibilidad</h5>
+                        <!-- <div style="text-align: center;">
+                        <a href='https://www.flow.cl/btn.php?token=gyvdhvb' target='_blank'>
+                            <img src='https://www.flow.cl/img/botones/btn-pagar-celeste.png'>
+                        </a>
+                    </div> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/20.jpg">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/20.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-box" style="background-color: orange;margin: 5%;width: 90%; height: 62%;">
+                        <h5>Caldera WBN6000 Bosch Gas natural</h5>
+                        <p>
+                            Características generales
+                            } Gama Gaz 6000 W incluye las potencias de 18,
+                            24, 28 y 35 kW // 10, 13, 16, 19 l/min // 150, 200,
+                            250, 300 m2 respectivamente.
+                            } Silenciosas.
+                            } Fácil mantención, todas las piezas son removibles
+                            con herramientas básicas y posee repuestos
+                            standards.
+                            } Cuenta con un panel digital que indica funciones
+                            y código de errores.
+                            } Compatible con termostatos programables.
+                            } Compatibles con sistemas solares.
+                            } Poseen Intercambiador de placas, ventilador
+                            modulante y tanque de expansión de 6 y 8 litros.
+                            } Tecnología Alemana.
+                        </p>
+                        <div class="project-name">No incluye despacho </div>
+                        <h5>Valor: $ 579.000 CLP 18KW</h5>
+                        <br>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=b9cnfyx' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                        <h5>Valor: $ 620.000 CLP 24 KW </h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=b9cnfyx' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                        <br>
+                        <h5>Valor: $ 729.000 CLP 28 KW </h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=b9cnfyx' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                        <br>
+                        <h5>Valor: $ 849.000 CLP 35 KW </h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=b9cnfyx' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/18.jpg">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/18.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-box" style="background-color: orange;margin: 5%;width: 90%; height: 62%;">
+                        <h5>Calefon Cámara estanca WTD-AME</h5>
+                        <ul>
+                            <li>12, 15 , 18 Litros</li>
+                            <li>Tiro forzado de càmara cerrada (estanca) / Ionizado</li>
+                            <li>Disponible en Gas natural y GLP</li>
+                            <li> Encendido automático enchufa 220V</li>
+                            <li>3 años de garantía</li>
+                            <li>Serpentín 100% cobre Lámina anticalcáreas</li>
+                            <li>Evita la acumulación
+                                del sarro por el paso del agua.</li>
+                            <li>Pantalla indicadora de temperatura y averías</li>
+                            <li>6 sistemas de seguridad:Limitador de temperatura,
+                                Válvula de seguridad, Función de autodiagnóstico
+                                Sensor de detección de llama, Monitoreo de
+                                evacuación de gases, Protección contra quemaduras</li>
+                        </ul>
+
+                        <div class="project-name">No incluye despacho </div>
+
+                        <h5>Valor: $ 373.000 CLP 12 litros</h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=2fuszmz' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                        <h5>Valor: $ 446.000 CLP 15 litros</h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=s5xkva1' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                        <h5>Valor: $ 499.000 CLP 18 litros</h5>
+                        <!-- <div style="text-align: center;">
+                            <a href='https://www.flow.cl/btn.php?token=6brr44z' target='_blank'>
+                                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
 
     <!-- Webpay-->
-    <section class="page-section bg-primary" id="transbank">
+    <section class="page-section bg-primary">
         <div class="container text-center">
-            <h2 class="mb-4">Paga online su calefon</h2>
-            <h5>Calefon tiro forzado Hydrowind easy 12 lts</h5>
-            <a href='https://www.flow.cl/btn.php?token=b9cnfyx' target='_blank'>
-                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
-            </a>
-            <h5>Calefon tiro natural Smart-C 13 lts</h5>
-            <a href='https://www.flow.cl/btn.php?token=snosy3j' target='_blank'>
-                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
-            </a>
-            <h5>Calefon tiro forzado WTD 15 lts</h5>
-            <a href='https://www.flow.cl/btn.php?token=6vtfvpx' target='_blank'>
-                <img src='https://www.flow.cl/img/botones/btn-pagar-negro.png'>
-            </a>
+            <h1 style="text-align: center;"><u><strong><i>Condiciones de compra online</i></strong></u>
+            </h1>
+            <MARQUEE WIDTH=80% HEIGHT=60 style="font-size: 30px;"> LEA ESTO ÁNTES DE REALIZAR LA COMPRA. </MARQUEE>
+            <br>
+            <hr align="left" size="10" width="100%" />
+            <ul>
+                <li>No realizamos entrega de productos en tienda fìsica. Toda compra debe considerar entrega a domicilio
+                    con cargo al comprador.
+                </li>
+
+                <li>Los tiempos de entrega variarán de acuerdo a la disponibilidad del producto en stock. Debido a esto,
+                    es muy importante ántes de realizar una compra, coordinar por medio del Whatsapp los tiempos de
+                    entrega.
+                </li>
+
+                <li>tecnicodecalefon.cl entrega 3 meses de garantìa por la instalaciòn del producto en caso de haber
+                    adquirìdo el servicio. En cuanto a la garantìa del producto en caso de mal funcionamiento o
+                    desperfecto del mismo,
+                    el comprador tendrà que comunicarse a la mesa de ayuda de la empresa Junkers para solicitar
+                    asistencia técnica de
+                    garantìa de acuerdo a las condiciones de la marca.
+                </li>
+                <li>
+                    NO REALIZAMOS ENTREGA DE PRODUCTOS EN NUESTRA BODEGA, EN EL CASO DE REQUERIR COMPRAR EL PRODUCTO SIN
+                    EL SERVICIO DE INSTALACION DEBERÁ COMUNICARSE CON NOSOTROS PARA HABILITARLE EL BOTON DE PAGO DEL
+                    DESPACHO DEPENDIENDO DEL LUGAR DE ENTREGA.
+                    PARA AQUELLOS QUE REQUIERAN COMPRAR EL PRODUCTO + EL SERVICIO DE INSTALACION EL VALOR DEL DESPACHO
+                    NO TIENE COSTO.
+                </li>
+            </ul>
             <br>
 
-            <MARQUEE WIDTH=80% HEIGHT=60> Ántes de realizar la compra confirmar al whatsapp si existe stock del
-                producto. </MARQUEE>
+            <MARQUEE WIDTH=80% HEIGHT=60 style="font-size: 30px;"> Ántes de realizar la compra confirmar al whatsapp si
+                existe stock del producto o bien cuanto sería el tiempo de entrega. </MARQUEE>
             <br>
             <hr align="left" size="10" width="100%" />
 
-
-            <p class="tamaño">
-                NO REALIZAMOS ENTREGA DE PRODUCTOS EN NUESTRA BODEGA, EN EL CASO DE REQUERIR COMPRAR EL PRODUCTO SIN
-                EL SERVICIO DE INSTALACION DEBERÁ COMUNICARSE CON NOSOTROS PARA HABILITARLE EL BOTON DE PAGO DEL
-                DESPACHO
-                DEPENDIENDO DEL LUGAR DE ENTREGA. PARA AQUELLOS QUE REQUIERAN COMPRAR EL PRODUCTO + EL SERVICIO DE
-                INSTALACION EL VALOR DEL DESPACHO NO TIENE COSTO.
-            </p>
         </div>
     </section>
     <!-- Contacto-->
@@ -379,8 +961,6 @@
         <div class="container text-center">
             <a href="https://www.elreydelpastelon.cl" target="_blank">Venta de pastelones</a>
             </span>||
-            <a href="https://www.gasfiterpex.cl" target="_blank">Gasfiter</a>
-            </span>||
             <a href="https://www.seoguren.com" target="_blank">Desarrollo web</a>
             </span>||
             <a href="https://www.ventadepastelones.cl" target="_blank">Instalación de pastelones</a>
@@ -396,6 +976,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
+    <script src="https://apis.google.com/js/platform.js?onload=renderBadge" async diferir> </script>
+
+    <script>
+        window.renderBadge = function () {
+            var ratingBadgeContainer = document.createElement("div");
+            document.body.appendChild(ratingBadgeContainer);
+            window.gapi.load('ratingbadge', function () {
+                window.gapi.ratingbadge.render(ratingBadgeContainer, {
+                    "comerciante_id": 261857595
+                });
+            });
+        }
+    </script>
+
 </body>
 
 </html>
