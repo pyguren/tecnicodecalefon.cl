@@ -11183,3 +11183,18 @@ header.masthead h1 {
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
+.boton.alternativo { 
+  background-color: var(--blue);
+  color: white!important;
+  border: 2px solid #00c69f;
+  border-radius: 20px;
+  padding: 20px;
+}
+.boton.alternativo:hover {
+  background-color: var(--blue)!important;
+  color: white!important;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 20px;
+ font-size: 32px;
+}
